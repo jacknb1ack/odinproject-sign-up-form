@@ -48,36 +48,121 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(#8ec7f5, #f5bc8e);
+  color: #032642;
 }
 
 /* main content styling */
 .forms {
   display: flex;
-  background: linear-gradient(#8ec7f5, #f5bc8e);
-
-  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 1em;
   gap: 2em;
 }
 
+/* left side styling */
 .leftbar {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  min-width: 250px;
 }
 
 .leftbar h1 {
   color: #0d0c5f;
   font-size: 2.5em;
   font-weight: 900;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .tagline {
   height: 5em;
-
+  margin-bottom: 4em;
   color: #032642;
   margin-top: 10em;
   font-size: 2em;
   font-weight: 700;
   text-align: center;
+}
+
+/* form section styling */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+
+.content h2 {
+  color: #032642;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+/* input field styling */
+.middle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.middle div {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid rgb(3, 8, 49);
+  border-radius: 2px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background-color: #e6e6e65b;
+  font-size: 1em;
+  padding-left: 0.5em;
+  margin-bottom: 1em;
+  color: #032642;
+}
+
+input:focus {
+  border: 1px solid rgb(66, 50, 211);
+  background-color: #97979733;
+}
+
+input:valid {
+  background-color: aliceblue;
+  border: 1px solid greenyellow;
+}
+
+input:invalid {
+  background-color: #97979733;
+  border: 1px solid rgb(238, 60, 60);
+}
+
+label {
+  margin: 1em 0;
+}
+
+/* submit button styling */
+button {
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #8ec7f5;
+  color: #0d0c5f;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: #032642;
+  color: #8ec7f5;
 }
