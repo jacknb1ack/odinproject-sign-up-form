@@ -34,3 +34,50 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* global styling */
+html {
+  font-family: "Noto Sans", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vh;
+  margin: 0 auto;
+  background-color: rgb(88, 92, 92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main content styling */
+.forms {
+  display: flex;
+  background: linear-gradient(#8ec7f5, #f5bc8e);
+
+  border-radius: 20px;
+  padding: 1em;
+  gap: 2em;
+}
+
+.leftbar {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.leftbar h1 {
+  color: #0d0c5f;
+  font-size: 2.5em;
+  font-weight: 900;
+}
+
+.tagline {
+  height: 5em;
+
+  color: #032642;
+  margin-top: 10em;
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+}
