@@ -12,49 +12,47 @@
         <h1>.CO</h1>
         <div class="tagline">Let's Make it Happen Together!</div>
       </div>
-      <form action="" method="post"></form>
-      <div id="content" class="content">
-        
+      <form action="" method="post">
+        <div id="content" class="content">
           <div id="top" class="top">
             <h2>Registration Form</h2>
-            <p>All field are required</p>
+            <p>All fields are required</p>
           </div>
           <div id="middle" class="middle">
             <div class="firstName">
               <label for="first-name">First Name</label>
-              <input type="text" name="first-name" id="first-name" />
+              <input type="text" name="first-name" id="first-name" required placeholder="John" />
             </div>
 
             <div class="lastName">
               <label for="last-name">Last Name</label>
-              <input type="text" name="last-name" id="last-name" />
+              <input type="text" name="last-name" id="last-name" required placeholder="Doe" />
             </div>
 
             <div class="email">
               <label for="email">E-Mail Address</label>
-              <input type="email" name="email" id="email" />
+              <input type="email" name="email" id="email" required placeholder="your@mail.com" />
             </div>
 
             <div class="phone">
               <label for="phone">Phone Number</label>
-              <input type="tel" name="phone" id="phone" />
+              <input type="tel" name="phone" id="phone" required placeholder="0214564789" />
             </div>
 
             <div class="password">
               <label for="password">Password</label>
-              <input type="password" name="password" id="password" />
+              <input type="password" name="password" id="password" required minlength="8" maxlength="16" />
             </div>
 
             <div class="confirmPass">
               <label for="confirm-password">Confirm Password</label>
-              <input type="password" name="confirm-password" id="confirm-password" />
+              <input type="password" name="confirm-password" id="confirm-password" required minlength="8" maxlength="16" />
             </div>
           </div>
           <div id="bottom" class="bottom">
             <button type="submit">Create Account</button>
           </div>
-        
-      </div>
+        </div>
       </form>
     </section>
   </body>
